@@ -1,7 +1,7 @@
 <div align="center">
 
 # Hi, 
-### I'm <span style="color: #0000FF; font-weight: bold; ">An Van Nguyen</span>! [🔜](https://anvndev.github.io/)
+### I'm <span style="color: #0000FF; font-weight: bold; ">An Van Nguyen</span>! [⏭️](https://anvndev.github.io/)
 
 </div>
 
