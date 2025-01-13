@@ -3,7 +3,7 @@ name: Update README with Currency Rates
 on:
   schedule:
     - cron: "0 * * * *" # run every hour
-  workflow_dispatch: # allow manual trigger
+  workflow_dispatch: # accept manual trigger
 
 jobs:
   update-readme:
@@ -17,9 +17,9 @@ jobs:
       # fetch currency rates
       - name: Fetch currency rates
         env:
-          OPENEXCHANGE_API_KEY: ${{ secrets.OPENEXCHANGE_API_KEY }}
+          API_KEY: ${{ secrets.OPENEXCHANGE_API_KEY }}
         run: |
-          curl -s "https://openexchangerates.org/api/latest.json?app_id=$OPENEXCHANGE_API_KEY" > rates.json
+          curl -s "https://openexchangerates.org/api/latest.json?app_id=$API_KEY" > rates.json
 
       # update README.md
       - name: Update README.md
@@ -28,21 +28,19 @@ jobs:
           RATE_USD_EUR=$(jq '.rates.EUR / .rates.USD' rates.json)
           RATE_EUR_VND=$(jq '.rates.VND / .rates.EUR' rates.json)
 
-          echo "# Currency Rates" > README.md
-          echo "Last updated: $(date '+%Y-%m-%d %H:%M:%S')" >> README.md
-          echo "" >> README.md
-          echo "| Currency Pair  | Rate       |" >> README.md
-          echo "|---------------|------------|" >> README.md
-          echo "| USD to VND    | $RATE_USD_VND |" >> README.md
-          echo "| USD to EUR    | $RATE_USD_EUR |" >> README.md
-          echo "| EUR to VND    | $RATE_EUR_VND |" >> README.md
+          # write new values to README.md
+          sed -i "s|<time>|$(date '+%Y-%m-%d %H:%M:%S')|g" README.md
+          sed -i "s|<usd_to_vnd>|$RATE_USD_VND|g" README.md
+          sed -i "s|<usd_to_eur>|$RATE_USD_EUR|g" README.md
+          sed -i "s|<eur_to_vnd>|$RATE_EUR_VND|g" README.md
 
+          # commit and push changes
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           git commit -m "Update currency rates"
           git push
 
-      # clean up temporary JSON file
+      # clean up temporary files
       - name: Clean up
         run: rm rates.json
