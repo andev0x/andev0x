@@ -28,18 +28,18 @@
 
 ## 🌟 About Me
 - 🎓 Recent graduate in **Information Technology**.  
-- 💡 Interested in **mobile app development** and **embedded systems**.  
+- 💡 Interested in **mobile app development**, **backend**, **design** and **embedded systems**.  
 - 🔭 Working on improving my skills in **Flutter** and **iOS development**.  
 
 ---
 
 ## 🌍 Currency Exchange Rates
-_Last updated: `2025-01-14 07:07:00`_
+_Last updated: `<time>`_
 
 | Currency Pair  | Rate       |
 |----------------|------------|
-| USD to VND     | `25387.155736` |
-| USD to EUR     | `0.97532` |
-| EUR to VND     | `26029.565410326868` |
+| USD to VND     | `<usd_to_vnd>` |
+| USD to EUR     | `<usd_to_eur>` |
+| EUR to VND     | `<eur_to_vnd>` |
 
 ---

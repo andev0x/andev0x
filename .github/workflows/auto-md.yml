@@ -2,12 +2,12 @@ name: Update README with Currency Rates
 
 on:
   schedule:
-    - cron: "0 * * * *" # run every hour
+    - cron: "0 */3 * * *" # run every hour
   workflow_dispatch: # accept manual trigger
 
 jobs:
   update-readme:
-    runs-on: ubuntu-22.04 # standard version of Ubuntu Linux
+    runs-on: ubuntu-latest # standard version of Ubuntu Linux
 
     steps:
       # Get source code
