@@ -7,40 +7,47 @@ on:
 
 jobs:
   update-readme:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04 # standard version of Ubuntu Linux
 
     steps:
-      # get source code
+      # Get source code
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # fetch currency rates
+      # Fetch currency rates
       - name: Fetch currency rates
         env:
           API_KEY: ${{ secrets.OPENEXCHANGE_API_KEY }}
         run: |
-          curl -s "https://openexchangerates.org/api/latest.json?app_id=$API_KEY" > rates.json
+          curl -s "https://openexchangerates.org/api/latest.json?app_id=$API_KEY" -o rates.json
 
-      # update README.md
+      # Update README.md
       - name: Update README.md
         run: |
+          # Extract currency rates
           RATE_USD_VND=$(jq '.rates.VND / .rates.USD' rates.json)
           RATE_USD_EUR=$(jq '.rates.EUR / .rates.USD' rates.json)
           RATE_EUR_VND=$(jq '.rates.VND / .rates.EUR' rates.json)
 
-          # write new values to README.md
+          # Update placeholders in README.md
           sed -i "s|<time>|$(date '+%Y-%m-%d %H:%M:%S')|g" README.md
           sed -i "s|<usd_to_vnd>|$RATE_USD_VND|g" README.md
           sed -i "s|<usd_to_eur>|$RATE_USD_EUR|g" README.md
           sed -i "s|<eur_to_vnd>|$RATE_EUR_VND|g" README.md
 
-          # commit and push changes
+          # Configure Git
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "docs: update currency rates" || echo "no changes to commit"
-          git push
 
-      # clean up temporary files
+          # Commit changes if any
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "docs: update currency rates"
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
+          fi
+
+      # Clean up temporary files
       - name: Clean up
         run: rm rates.json
