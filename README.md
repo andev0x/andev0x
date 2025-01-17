@@ -34,12 +34,12 @@
 ---
 
 ## 🌍 Currency Exchange Rates
-_Last updated: <time>_
+_Last updated: `<time>`_
 
 | Currency Pair  | Rate       |
 |----------------|------------|
-| USD to VND     | <usd_to_vnd> |
-| USD to EUR     | <usd_to_eur> |
-| EUR to VND     | <eur_to_vnd> |
+| USD to VND     | `<usd_to_vnd>` |
+| USD to EUR     | `<usd_to_eur>` |
+| EUR to VND     | `<eur_to_vnd>` |
  
 ---
