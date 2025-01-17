@@ -2,7 +2,7 @@ name: Update README with Currency Rates
 
 on:
   schedule:
-    - cron: "0 */2 * * *" # run 2 hour
+    - cron: "0 * * * *" # run every hour
   workflow_dispatch: # accept manual trigger
 
 jobs:
@@ -29,15 +29,15 @@ jobs:
           RATE_USD_EUR=$(jq '.rates.EUR / .rates.USD' rates.json)
           RATE_EUR_VND=$(jq '.rates.VND / .rates.EUR' rates.json)
 
-          # Update placeholders in README.md
+          # Update currency rates in README.md
+          sed -i "s|^| USD to VND     |.*| | USD to VND     | \`$RATE_USD_VND\` |g" README.md
+          sed -i "s|^| USD to EUR     |.*| | USD to EUR     | \`$RATE_USD_EUR\` |g" README.md
+          sed -i "s|^| EUR to VND     |.*| | EUR to VND     | \`$RATE_EUR_VND\` |g" README.md
           sed -i "s|<time>|$(date '+%Y-%m-%d %H:%M:%S')|g" README.md
-          sed -i "s|<usd_to_vnd>|$RATE_USD_VND|g" README.md
-          sed -i "s|<usd_to_eur>|$RATE_USD_EUR|g" README.md
-          sed -i "s|<eur_to_vnd>|$RATE_EUR_VND|g" README.md
 
           # Configure Git
-          git config --global user.name "my-bot"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "anvng"
+          git config --global user.email "anvndev@gmail.com"
 
           # Commit changes if any
           git add README.md
