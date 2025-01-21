@@ -33,7 +33,7 @@ jobs:
           sed -i "s/| USD to VND     | .* |/| USD to VND     | \`$RATE_USD_VND\` |/" README.md
           sed -i "s/| USD to EUR     | .* |/| USD to EUR     | \`$RATE_USD_EUR\` |/" README.md
           sed -i "s/| EUR to VND     | .* |/| EUR to VND     | \`$RATE_EUR_VND\` |/" README.md
-          sed -i "s/<time>/$(date '+%Y-%m-%d %H:%M:%S')/" README.md
+          sed -i "s|Last updated: .*|Last updated: $(date '+%Y-%m-%d %H:%M:%S')|g" README.md
 
           # Configure Git
           git config --global user.name "anvng"
