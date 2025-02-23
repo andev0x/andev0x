@@ -2,7 +2,7 @@ name: Update README with Currency Rates
 
 on:
   schedule:
-    - cron: "0 */2 * * *" # run every 2 hours
+    - cron: "0 */4 * * *" # run every 4 hours
   workflow_dispatch: # accept manual trigger
 
 jobs:
