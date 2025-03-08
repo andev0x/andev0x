@@ -34,12 +34,12 @@
 ---
 
 ## 🌍 Currency Exchange Rates
-_Last updated: 2025-03-07 20:09:01
+_Last updated: 2025-03-08 00:30:43
 
 | Currency Pair  | Rate       |
 |----------------|------------|
 | USD to VND     | `25505` |
-| USD to EUR     | `0.922278` |
-| EUR to VND     | `27654.35150789675` |
+| USD to EUR     | `0.922931` |
+| EUR to VND     | `27634.785265637413` |
  
 ---
