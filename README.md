@@ -15,7 +15,7 @@
 <p align="center">
   <b></b><br>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,cpp,java,swift,kotlin,dart" />
+    <img src="https://skillicons.dev/icons?i=python,golang,cpp,java,swift,kotlin,dart" />
   </a>
 </p>
 <p align="center">
