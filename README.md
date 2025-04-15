@@ -15,12 +15,12 @@
 <p align="center">
   <b></b><br>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,golang,cpp,java,swift,kotlin,dart" />
+    <img src="https://skillicons.dev/icons?i=python,golang,rust,cpp,java,swift,kotlin,dart" />
   </a>
 </p>
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=spring,net,nodejs" />
+    <img src="https://skillicons.dev/icons?i=django,spring,net,nodejs" />
   </a>
 </p>
 
