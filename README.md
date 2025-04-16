@@ -3,8 +3,8 @@
 # Hi, 
 ### I'm **An Van Nguyen**! [⏭️](https://anvndev.github.io/)
 
-🚀 Passionate about **software development** and **mobile app creation**.  
-🌟 Skilled in **Flutter**, **Swift**, **Kotlin**, and more.  
+🧠 Backend-focused **Software Engineer** specialized in **Golang** and **Rust**.  
+🔧 Passionate about building **high-performance APIs**, **scalable systems**, and **modern backend architectures**.  
 📫 [Contact Me](https://anvndev.github.io/) | 🌍 [Portfolio](https://anvng.github.io/resume/)
 
 </div>
@@ -12,34 +12,39 @@
 ---
 
 ## 🛠️ Skills
-<p align="center">
-  <b></b><br>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,golang,rust,cpp,java,swift,kotlin,dart" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=django,spring,net,nodejs" />
-  </a>
-</p>
+
+<div align="center">
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=golang,rust,python,java,cpp,swift,kotlin,dart" />
+</a><br><br>
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,docker,kubernetes" />
+</a><br><br>
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=actix,django,nodejs" />
+</a>
+
+</div>
 
 ---
 
+
 ## 🌟 About Me
 - 🎓 Recent graduate in **Information Technology**.  
-- 💡 Interested in **mobile app development**, **backend**, **design** and **embedded systems**.  
-- 🔭 Working on improving my skills in **Flutter** and **iOS development**.  
+- 🧩 Deep interest in **backend development**, **system design**, and **distributed computing**.  
+- 🚀 Currently mastering production-grade development with **Go**, **Rust**, and **Docker/Kubernetes**.  
+- 🌐 Familiar with building **RESTful APIs**, **gRPC services**, and **event-driven systems**.
 
 ---
 
 ## 🌍 Currency Exchange Rates
-_Last updated: 2025-04-16 00:41:48
+_Last updated: 2025-04-16 00:41:48_
 
 | Currency Pair  | Rate       |
 |----------------|------------|
 | USD to VND     | `25821.573277` |
 | USD to EUR     | `0.885337` |
 | EUR to VND     | `29165.812879163524` |
- 
----
