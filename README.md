@@ -3,8 +3,8 @@
 # Hi, 
 ### I'm **An Van Nguyen**! [⏭️](https://anvndev.github.io/)
 
-🧠 Backend-focused **Software Engineer** specialized in **Golang** and **Rust**.  
-🔧 Passionate about building **high-performance APIs**, **scalable systems**, and **modern backend architectures**.  
+<!-- 🧠 Backend-focused **Software Engineer** specialized in **Golang** and **Rust**.  -->
+<!-- 🔧 Passionate about building **high-performance APIs**, **scalable systems**, and **modern backend architectures**.  -->
 📫 [Contact Me](https://anvndev.github.io/) | 🌍 [Portfolio](https://anvng.github.io/resume/)
 
 </div>
