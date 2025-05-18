@@ -41,7 +41,7 @@
 ---
 
 ## 🌍 Currency Exchange Rates
-_Last updated: 2025-05-17 20:08:39
+_Last updated: 2025-05-18 00:46:58
 
 | Currency Pair  | Rate       |
 |----------------|------------|
