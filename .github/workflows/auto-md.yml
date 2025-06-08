@@ -36,7 +36,7 @@ jobs:
           sed -i "s|Last updated: .*|Last updated: $(date '+%Y-%m-%d %H:%M:%S')|g" README.md
 
           # Configure Git
-          git config --global user.name "andevgo"
+          git config --global user.name "andev0x"
           git config --global user.email "anvndev@gmail.com"
 
           # Commit changes if any
