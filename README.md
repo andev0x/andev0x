@@ -5,7 +5,7 @@
 
 <!-- 🧠 Backend-focused **Software Engineer** specialized in **Golang** and **Rust**.  -->
 <!-- 🔧 Passionate about building **high-performance APIs**, **scalable systems**, and **modern backend architectures**.  -->
-📫 [Contact Me](https://anvndev.github.io/) | 🌍 [Portfolio](https://andevgo.github.io/resume/)
+📫 [Contact Me](https://anvndev.github.io/) | 🌍 [Portfolio](https://andev0x.github.io/resume/)
 
 </div>
 
