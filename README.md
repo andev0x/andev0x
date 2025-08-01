@@ -1,6 +1,10 @@
-<div align="center">
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=900&color=1CF77C&width=635&center=true&size=20&lines=Hello+(English);Bonjour+(French);Hallo+(German);こんにちは+(Japanese);안녕하세요+(Korean);Xin+chào+(Vietnamese);你好+(Chinese);नमस्ते+(Hindi);Hola+(Spanish);Ciao+(Italian);Привет+(Russian);Olá+(Portuguese);مرحبا+(Arabic)" alt="Typing SVG" />
+</h1>
 
-# Hi, 
+
+<div align="center">
+  
 ### I'm **An Van Nguyen**! [⏭️](https://anvndev.github.io/)
 
 <!-- 🧠 Backend-focused **Software Engineer** specialized in **Golang** and **Rust**.  -->
