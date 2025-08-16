@@ -25,7 +25,7 @@
 <div align="center">
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=golang,rust,python,java,cpp,swift,kotlin,dart" alt="Programming Languages"/>
+  <img src="https://skillicons.dev/icons?i=golang,rust,python,ts,cpp,swift,kotlin,dart" alt="Programming Languages"/>
 </a><br><br>
 
 <a href="https://skillicons.dev">
