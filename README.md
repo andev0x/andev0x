@@ -7,13 +7,13 @@
 ### I'm **Andeph Nguyen**! [⏭️](https://anvndev.github.io/)
 
 <a href="https://anvndev.github.io/">
-  <img src="https://img.shields.io/badge/ Contact%20Me-a8dadc?style=for-the-badge&logo=maildotru&logoColor=white" />
+  <img src="https://img.shields.io/badge/ Contact%20Me-a8dadc?style=flat&logo=maildotru&logoColor=white&color=a8dadc" />
 </a>
 <a href="https://andev0x.github.io/resume/">
-  <img src="https://img.shields.io/badge/ Portfolio-89c2d9?style=for-the-badge&logo=googleearth&logoColor=white" />
+  <img src="https://img.shields.io/badge/ Portfolio-89c2d9?style=flat&logo=googleearth&logoColor=white&color=89c2d9" />
 </a>
 <a href="https://andev0x.github.io">
-  <img src="https://img.shields.io/badge/ Blog-f6bd60?style=for-the-badge&logo=githubpages&logoColor=white" />
+  <img src="https://img.shields.io/badge/ Blog-f6bd60?style=flat&logo=githubpages&logoColor=white&color=f6bd60" />
 </a>
 
 </div>
