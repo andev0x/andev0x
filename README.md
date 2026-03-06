@@ -72,10 +72,10 @@ automation  > repetition
 ---
 
 ## 🌍 Currency Exchange Rates
-_Last updated: 2026-03-06 12:44:26
+_Last updated: 2026-03-06 18:37:32
 
 | Currency Pair  | Rate       |
 |----------------|------------|
 | USD to VND     | `26239.920593` |
-| USD to EUR     | `0.864818` |
-| EUR to VND     | `30341.55231852251` |
+| USD to EUR     | `0.862373` |
+| EUR to VND     | `30427.576690132926` |
