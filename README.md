@@ -4,7 +4,8 @@
 
 <div align="center">
   
-### I'm **Andeph Nguyen**! [⏭️](https://anvndev.github.io/)
+### **Andeph Nguyen**
+Backend & Systems Engineer
 
 <a href="https://anvndev.github.io/">
   <img src="https://img.shields.io/badge/ Contact-a8dadc?style=flat&logo=maildotru&logoColor=white&color=a8dadc" />
@@ -20,7 +21,7 @@
 
 ---
 
-## 🛠️ Skills
+## Tech Stack
 
 <div align="center">
 
@@ -40,11 +41,33 @@
 
 ---
 
-## 🌟 About Me
-- 🎓 **Graduated** in **Information Technology**.  
-- 🧩 Deep interest in **backend development**, **system design**, and **distributed computing**.  
-- 🚀 Currently mastering production-grade development with **Go**, **Rust**, and **Docker/Kubernetes**.  
-- 🌐 Familiar with building **RESTful APIs**, **gRPC services**, and **event-driven systems**.
+## About
+
+Backend-focused developer with a strong interest in **systems design**, **distributed systems**, and **developer tooling**.
+
+Most of my recent work revolves around building backend services, experimenting with system architecture, and improving development workflows.
+
+Currently spending most of my time working with **Go**, **Rust**, and containerized infrastructure.
+
+---
+
+## Engineering Focus
+
+- **Backend Services** — building APIs and services with Go and Rust
+- **Distributed Systems** — learning and experimenting with service communication patterns
+- **Infrastructure** — containerized environments using Docker and Kubernetes
+- **Developer Tooling** — CLI utilities and terminal-centric workflows
+
+---
+
+## Engineering Philosophy
+
+```
+simplicity  > complexity
+clarity     > cleverness
+systems     > shortcuts
+automation  > repetition
+```
 
 ---
 
