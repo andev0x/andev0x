@@ -5,7 +5,7 @@
 <div align="center">
   
 ### **Andeph Nguyen**
-Backend & Systems Engineer
+Backend & Distributed Systems Engineer
 
 <a href="https://anvndev.github.io/">
   <img src="https://img.shields.io/badge/ Contact-a8dadc?style=flat&logo=maildotru&logoColor=white&color=a8dadc" />
@@ -18,6 +18,18 @@ Backend & Systems Engineer
 </a>
 
 </div>
+
+---
+
+## About
+
+Backend engineer interested in **systems design**, **distributed systems**, and **developer infrastructure**.
+
+I enjoy building backend services, exploring system architecture, and creating tools that improve development workflows.
+
+Currently spending most of my time working with **Go**, **Rust**, and containerized environments.
+
+Still learning every day and continuously experimenting with new ideas in backend engineering.
 
 ---
 
@@ -41,22 +53,12 @@ Backend & Systems Engineer
 
 ---
 
-## About
-
-Backend-focused developer with a strong interest in **systems design**, **distributed systems**, and **developer tooling**.
-
-Most of my recent work revolves around building backend services, experimenting with system architecture, and improving development workflows.
-
-Currently spending most of my time working with **Go**, **Rust**, and containerized infrastructure.
-
----
-
 ## Engineering Focus
 
-- **Backend Services** — building APIs and services with Go and Rust
-- **Distributed Systems** — learning and experimenting with service communication patterns
-- **Infrastructure** — containerized environments using Docker and Kubernetes
-- **Developer Tooling** — CLI utilities and terminal-centric workflows
+- **Backend Services** — building APIs and services primarily with Go and Rust  
+- **Distributed Systems** — learning and experimenting with service communication patterns  
+- **Infrastructure** — working with containerized environments using Docker and Kubernetes  
+- **Developer Tooling** — building CLI utilities and improving terminal-based workflows  
 
 ---
 
@@ -68,6 +70,18 @@ clarity     > cleverness
 systems     > shortcuts
 automation  > repetition
 ```
+
+---
+
+## Learning
+
+Some areas I'm currently exploring and learning more about:
+
+- distributed system patterns
+- reliability and observability
+- high-performance backend services
+- infrastructure automation
+
 
 ---
 
