@@ -13,7 +13,7 @@ Backend & Distributed Systems Engineer
 <a href="https://andev0x.github.io/resume/">
   <img src="https://img.shields.io/badge/ Portfolio-89c2d9?style=flat&logo=googleearth&logoColor=white&color=89c2d9" />
 </a>
-<a href="https://andev0x.github.io">
+<a href="https://andev0x-blog.vercel.app/">
   <img src="https://img.shields.io/badge/ Blog-f6bd60?style=flat&logo=githubpages&logoColor=white&color=f6bd60" />
 </a>
 
