@@ -86,10 +86,10 @@ Some areas I'm currently exploring and learning more about:
 ---
 
 ## 🌍 Currency Exchange Rates
-_Last updated: 2026-06-29 15:38:11
+_Last updated: 2026-06-29 19:50:08
 
 | Currency Pair  | Rate       |
 |----------------|------------|
 | USD to VND     | `26284.663353` |
-| USD to EUR     | `0.875496` |
-| EUR to VND     | `30022.596737163847` |
+| USD to EUR     | `0.875213` |
+| EUR to VND     | `30032.30453958065` |
