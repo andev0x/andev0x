@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="56" viewBox="0 0 220 56" role="img">
+  <title>bluesky — @anvndev</title>
+  <style>
+    /* One segment of the contact bar: four pieces laid flush in a single source
+       line, each owning only its own slice of the frame. The outer pair draws
+       the rounded ends, every earlier segment draws the shared divider, so the
+       result reads as one bordered strip. #238636 is the only non-neutral
+       stroke on the page: it marks the interactive block and clears the 3:1
+       non-text contrast floor (3.6:1 on #0d1117). */
+    text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11.5px;
+    }
+    .card { fill: #0d1117; }
+    .edge { stroke: #238636; stroke-width: 1; fill: none; }
+    .key  { fill: #8b949e; }
+    .val  { fill: #3fb950; }
+  </style>
+  <path class="card" d="M0 0 H220 V56 H0 Z"/>
+  <line class="edge" x1="0" y1="0.5" x2="220" y2="0.5"/>
+  <line class="edge" x1="0" y1="55.5" x2="220" y2="55.5"/>
+  <line class="edge" x1="219.5" y1="0.5" x2="219.5" y2="55.5"/>
+  <g transform="translate(20 20) scale(0.6667)"><path fill="#3fb950" d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></g>
+  <text class="key" x="44" y="32">bluesky</text>
+  <text class="val" x="200" y="32" text-anchor="end">@anvndev</text>
+</svg>

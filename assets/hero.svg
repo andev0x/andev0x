@@ -1,20 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="144" viewBox="0 0 880 144" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="168" viewBox="0 0 880 168" role="img">
   <title>an ng — backend and distributed systems engineer</title>
   <style>
-    /* One palette, no prefers-color-scheme: the SVG is painted against the
-       viewer's GitHub theme, not their OS theme, and those disagree often.
-       #737d8a holds ~4.2:1 on both #ffffff and #0d1117, so hierarchy is
-       carried by size and weight instead of color. */
+    /* Fixed palette, never inherited from the viewer. The panel paints its own
+       #0d1117, so contrast is decided here rather than by the GitHub theme.
+       Text: #e6edf3 16.0:1 · #c9d1d9 12.3:1 · #8b949e 6.2:1 · #3fb950 7.5:1. */
     text {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      fill: #737d8a;
+      fill: #c9d1d9;
     }
-    .prompt { font-size: 13px; }
-    .accent { fill: #2da44e; }
-    .name   { font-size: 25px; font-weight: 600; fill: #6e7681; letter-spacing: -0.01em; }
-    .role   { font-size: 14px; }
-    .stack  { font-size: 12px; }
-    .status { font-size: 11px; letter-spacing: 0.06em; }
+    .panel  { fill: #0d1117; stroke: #30363d; }
+    .prompt { font-size: 13px; fill: #3fb950; }
+    .name   { font-size: 26px; font-weight: 600; fill: #e6edf3; letter-spacing: -0.01em; }
+    .role   { font-size: 14px; fill: #8b949e; }
+    .stack  { font-size: 12.5px; fill: #8b949e; }
+    .status { font-size: 11px; letter-spacing: 0.06em; fill: #8b949e; }
 
     .fade { opacity: 0; animation: rise 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
     .d1 { animation-delay: 0.05s; }
@@ -26,51 +25,39 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    .caret { fill: #2da44e; animation: blink 1.1s steps(1, end) infinite; }
+    .caret { fill: #3fb950; animation: blink 1.1s steps(1, end) infinite; }
     @keyframes blink {
       0%, 49%   { opacity: 1; }
       50%, 100% { opacity: 0; }
     }
 
-    .dot { fill: #2da44e; animation: pulse 2.4s ease-in-out infinite; }
+    .dot { fill: #3fb950; animation: pulse 2.4s ease-in-out infinite; }
     @keyframes pulse {
       0%, 100% { opacity: 0.3; }
       50%      { opacity: 1; }
     }
 
-    .rule {
-      stroke: #737d8a;
-      stroke-opacity: 0.3;
-      stroke-width: 1;
-      fill: none;
-      stroke-dasharray: 880;
-      stroke-dashoffset: 880;
-      animation: draw 1.1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s forwards;
-    }
-    @keyframes draw {
-      to { stroke-dashoffset: 0; }
-    }
-
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
       .fade { opacity: 1; }
-      .rule { stroke-dashoffset: 0; }
+      .caret { opacity: 1; }
+      .dot { opacity: 1; }
     }
   </style>
 
-  <text class="prompt accent fade d1" x="0" y="22">$ whoami</text>
-  <text class="status fade d1" x="856" y="24" text-anchor="end">status: shipping</text>
-  <circle class="dot" cx="868" cy="20" r="3.5" />
+  <rect class="panel" x="0.5" y="0.5" width="879" height="167" rx="12" />
 
-  <text class="fade d2" x="0" y="56">
+  <text class="prompt fade d1" x="32" y="44">$ whoami</text>
+  <text class="status fade d1" x="826" y="44" text-anchor="end">status: shipping</text>
+  <circle class="dot" cx="840" cy="40" r="3.5" />
+
+  <text class="fade d2" x="32" y="88">
     <tspan class="name">an ng</tspan>
-    <tspan class="role" dx="14">backend &amp; distributed systems engineer</tspan>
+    <tspan class="role" dx="16">backend &amp; distributed systems engineer</tspan>
   </text>
 
-  <text class="stack fade d3" x="0" y="86">go · rust · typescript · python · postgres · redis · docker · kubernetes</text>
+  <text class="stack fade d3" x="32" y="120">go · rust · typescript · python · postgres · redis · docker · kubernetes</text>
 
-  <text class="prompt accent fade d4" x="0" y="116">$</text>
-  <rect class="caret" x="12" y="106" width="8" height="13" rx="1" />
-
-  <line class="rule" x1="0" y1="138" x2="880" y2="138" />
+  <text class="prompt fade d4" x="32" y="152">$</text>
+  <rect class="caret" x="44" y="141" width="8" height="13" rx="1" />
 </svg>
