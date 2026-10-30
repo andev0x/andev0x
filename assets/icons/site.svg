@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" role="img">
-  <style>
-    /* mid-tone so it reads on both #ffffff and #0d1117 */
-    .frame { stroke: #737d8a; stroke-opacity: .34; fill: none; }
-    .glyph { fill: #6e7681; }
-  </style>
-  <rect class="frame" x="0.5" y="0.5" width="39" height="39" rx="10"/>
-  <g transform="translate(10.5 10.5) scale(0.7917)"><g fill="none" stroke="#6e7681" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><ellipse cx="12" cy="12" rx="3.9" ry="8.6"/><path d="M3.9 9.1h16.2M3.9 14.9h16.2"/></g></g>
-</svg>

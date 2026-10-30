@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="56" viewBox="0 0 220 56" role="img">
+  <title>web — andev0x.github.io</title>
+  <style>
+    /* One segment of the contact bar: four pieces laid flush in a single source
+       line, each owning only its own slice of the frame. The outer pair draws
+       the rounded ends, every earlier segment draws the shared divider, so the
+       result reads as one bordered strip. #238636 is the only non-neutral
+       stroke on the page: it marks the interactive block and clears the 3:1
+       non-text contrast floor (3.6:1 on #0d1117). */
+    text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11.5px;
+    }
+    .card { fill: #0d1117; }
+    .edge { stroke: #238636; stroke-width: 1; fill: none; }
+    .key  { fill: #8b949e; }
+    .val  { fill: #3fb950; }
+  </style>
+  <path class="card" d="M12 0 H220 V56 H12 A12 12 0 0 1 0 44 V12 A12 12 0 0 1 12 0 Z"/>
+  <path class="edge" d="M12 0.5 A11.5 11.5 0 0 0 0.5 12 V44 A11.5 11.5 0 0 0 12 55.5"/>
+  <line class="edge" x1="12" y1="0.5" x2="220" y2="0.5"/>
+  <line class="edge" x1="12" y1="55.5" x2="220" y2="55.5"/>
+  <line class="edge" x1="219.5" y1="0.5" x2="219.5" y2="55.5"/>
+  <g transform="translate(20 20) scale(0.6667)"><g fill="none" stroke="#3fb950" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><ellipse cx="12" cy="12" rx="3.9" ry="8.6"/><path d="M3.9 9.1h16.2M3.9 14.9h16.2"/></g></g>
+  <text class="key" x="44" y="32">web</text>
+  <text class="val" x="200" y="32" text-anchor="end">andev0x.github.io</text>
+</svg>
