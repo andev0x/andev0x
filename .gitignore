@@ -1,3 +1,7 @@
 .vscode/
 .venv/
 .idea/
+__pycache__/
+
+# ohgo runtime state
+.ohgo/

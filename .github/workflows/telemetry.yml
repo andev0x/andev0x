@@ -1,0 +1,56 @@
+name: telemetry
+
+on:
+  schedule:
+    # 03:17 UTC, daily. A fixed off-peak minute keeps the shared scheduler
+    # honest and avoids the top-of-the-hour stampede.
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: telemetry
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    # Cost model, explicitly: this is a public repository, so scheduled runs on
+    # a standard GitHub-hosted runner are not billable. The job talks to
+    # api.github.com with the repo-scoped token only — no paid keys, no
+    # third-party quota, no artifacts, no caches, no matrix.
+    #
+    # The daily commit is also what keeps GitHub from disabling the schedule
+    # after 60 days of repository inactivity.
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    if: github.repository_owner == 'andev0x'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Full history is a few hundred commits; the fallback renderer reads
+          # it directly and the extra bytes cost nothing.
+          fetch-depth: 0
+
+      - name: Render telemetry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/telemetry.py
+
+      - name: Commit only when the data moved
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/telemetry.svg
+
+          if git diff --cached --quiet; then
+            echo "telemetry unchanged — skipping commit"
+            exit 0
+          fi
+
+          git commit -m "chore(telemetry): refresh [skip ci]"
+          git push
