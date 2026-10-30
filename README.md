@@ -20,9 +20,7 @@ mode    = shipping
 
 ### telemetry
 
-<img src="assets/telemetry.svg" width="880" alt="Telemetry: 30-day commit activity, active days, repos touched, runner cost" />
-
-<sub>Rendered daily by one scheduled workflow — public runner, repo-scoped token, no third-party APIs. It costs <b>$0.00</b> and there is no key to rotate.</sub>
+<img src="assets/telemetry.svg" width="880" alt="Telemetry: recent push activity, active days, repos touched, runner cost" />
 
 ### in flight
 
@@ -30,8 +28,13 @@ mode    = shipping
 - **performance** — measuring the hot path before reaching for another cache
 - **infrastructure** — making the boring path the default path
 
-### elsewhere
+### contact
 
-[portfolio](https://andev0x.github.io/resume/) · [writing](https://andev0x.vercel.app/) · [contact](https://anvndev.github.io/) · [mail](mailto:anvndev@gmail.com)
+<div>
+  <a href="https://andev0x.github.io/" title="andev0x.github.io"><img src="assets/icons/site.svg" width="40" alt="Website — andev0x.github.io" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://mastodon.social/@anvndev" title="@anvndev@mastodon.social"><img src="assets/icons/mastodon.svg" width="40" alt="Mastodon — @anvndev@mastodon.social" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://bsky.app/profile/anvndev.bsky.social" title="@anvndev.bsky.social"><img src="assets/icons/bluesky.svg" width="40" alt="Bluesky — @anvndev.bsky.social" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://x.com/anvndev" title="@anvndev on X"><img src="assets/icons/x.svg" width="40" alt="X — @anvndev" /></a>
+</div>
 
 > simplicity over complexity · clarity over cleverness · systems over shortcuts
