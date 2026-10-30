@@ -1,95 +1,37 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=900&color=1CF77C&width=635&center=true&size=20&lines=Hello+(English);Bonjour+(French);Hallo+(German);こんにちは+(Japanese);안녕하세요+(Korean);Xin+chào+(Vietnamese);你好+(Chinese);नमस्ते+(Hindi);Hola+(Spanish);Ciao+(Italian);Привет+(Russian);Olá+(Portuguese);مرحبا+(Arabic)" alt="Typing SVG" />
-</h1>
+<!-- one workflow, one script, no badge farm. the rest is git. -->
 
 <div align="center">
-  
-### **An Ng.**
-Backend & Distributed Systems Engineer
-
-<a href="https://anvndev.github.io/">
-  <img src="https://img.shields.io/badge/ Contact-a8dadc?style=flat&logo=maildotru&logoColor=white&color=a8dadc" />
-</a>
-<a href="https://andev0x.github.io/resume/">
-  <img src="https://img.shields.io/badge/ Portfolio-89c2d9?style=flat&logo=googleearth&logoColor=white&color=89c2d9" />
-</a>
-<a href="https://andev0x.vercel.app/">
-  <img src="https://img.shields.io/badge/ Blog-f6bd60?style=flat&logo=githubpages&logoColor=white&color=f6bd60" />
-</a>
-
+  <img src="assets/hero.svg" width="880" alt="an ng — backend and distributed systems engineer" />
 </div>
 
----
+<br />
 
-## About
+I build backend systems that stay boring under load. Most of it is **Go** and **Rust** services, storage internals, and the tooling that keeps them observable — distributed systems by day, terminal ergonomics by night.
 
-Backend engineer interested in **systems design**, **distributed systems**, and **developer infrastructure**.
+I optimize for clarity over cleverness and systems over shortcuts. When something is slow, I reach for a profile first, not another cache.
 
-I enjoy building backend services, exploring system architecture, and creating tools that improve development workflows.
-
-Currently spending most of my time working with **Go**, **Rust**, and containerized environments.
-
-Still learning every day and continuously experimenting with new ideas in backend engineering.
-
----
-
-## Tech Stack
-
-<div align="center">
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=golang,rust,python,ts,cpp,swift,kotlin,dart" alt="Programming Languages"/>
-</a><br><br>
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,docker,kubernetes" alt="Databases and DevOps"/>
-</a><br><br>
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=actix,django,nodejs" alt="Frameworks"/>
-</a>
-
-</div>
-
----
-
-## Engineering Focus
-
-- **Backend Services** — building APIs and services primarily with Go and Rust  
-- **Distributed Systems** — learning and experimenting with service communication patterns  
-- **Infrastructure** — working with containerized environments using Docker and Kubernetes  
-- **Developer Tooling** — building CLI utilities and improving terminal-based workflows  
-
----
-
-## Engineering Philosophy
-
-```
-simplicity  > complexity
-clarity     > cleverness
-systems     > shortcuts
-automation  > repetition
+```ini
+# ~/.andev0x
+focus   = distributed systems · storage · developer infrastructure
+stack   = go · rust · typescript · python
+runtime = postgres · redis · docker · kubernetes
+mode    = shipping
 ```
 
----
+### telemetry
 
-## Learning
+<img src="assets/telemetry.svg" width="880" alt="Telemetry: 30-day commit activity, active days, repos touched, runner cost" />
 
-Some areas I'm currently exploring and learning more about:
+<sub>Rendered daily by one scheduled workflow — public runner, repo-scoped token, no third-party APIs. It costs <b>$0.00</b> and there is no key to rotate.</sub>
 
-- distributed system patterns
-- reliability and observability
-- high-performance backend services
-- infrastructure automation
+### in flight
 
+- **reliability** — SLOs, tracing, and postmortems that end in a diff
+- **performance** — measuring the hot path before reaching for another cache
+- **infrastructure** — making the boring path the default path
 
----
+### elsewhere
 
-## 🌍 Currency Exchange Rates
-_Last updated: 2026-10-30 12:00:43
+[portfolio](https://andev0x.github.io/resume/) · [writing](https://andev0x.vercel.app/) · [contact](https://anvndev.github.io/) · [mail](mailto:anvndev@gmail.com)
 
-| Currency Pair  | Rate       |
-|----------------|------------|
-| USD to VND     | `25803.122607` |
-| USD to EUR     | `0.893215` |
-| EUR to VND     | `28887.919041888013` |
+> simplicity over complexity · clarity over cleverness · systems over shortcuts

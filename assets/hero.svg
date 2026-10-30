@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="144" viewBox="0 0 880 144" role="img">
+  <title>an ng — backend and distributed systems engineer</title>
+  <style>
+    /* One palette, no prefers-color-scheme: the SVG is painted against the
+       viewer's GitHub theme, not their OS theme, and those disagree often.
+       #737d8a holds ~4.2:1 on both #ffffff and #0d1117, so hierarchy is
+       carried by size and weight instead of color. */
+    text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      fill: #737d8a;
+    }
+    .prompt { font-size: 13px; }
+    .accent { fill: #2da44e; }
+    .name   { font-size: 25px; font-weight: 600; fill: #6e7681; letter-spacing: -0.01em; }
+    .role   { font-size: 14px; }
+    .stack  { font-size: 12px; }
+    .status { font-size: 11px; letter-spacing: 0.06em; }
+
+    .fade { opacity: 0; animation: rise 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+    .d1 { animation-delay: 0.05s; }
+    .d2 { animation-delay: 0.2s; }
+    .d3 { animation-delay: 0.32s; }
+    .d4 { animation-delay: 0.44s; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(5px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .caret { fill: #2da44e; animation: blink 1.1s steps(1, end) infinite; }
+    @keyframes blink {
+      0%, 49%   { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    .dot { fill: #2da44e; animation: pulse 2.4s ease-in-out infinite; }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; }
+      50%      { opacity: 1; }
+    }
+
+    .rule {
+      stroke: #737d8a;
+      stroke-opacity: 0.3;
+      stroke-width: 1;
+      fill: none;
+      stroke-dasharray: 880;
+      stroke-dashoffset: 880;
+      animation: draw 1.1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s forwards;
+    }
+    @keyframes draw {
+      to { stroke-dashoffset: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .fade { opacity: 1; }
+      .rule { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <text class="prompt accent fade d1" x="0" y="22">$ whoami</text>
+  <text class="status fade d1" x="856" y="24" text-anchor="end">status: shipping</text>
+  <circle class="dot" cx="868" cy="20" r="3.5" />
+
+  <text class="fade d2" x="0" y="56">
+    <tspan class="name">an ng</tspan>
+    <tspan class="role" dx="14">backend &amp; distributed systems engineer</tspan>
+  </text>
+
+  <text class="stack fade d3" x="0" y="86">go · rust · typescript · python · postgres · redis · docker · kubernetes</text>
+
+  <text class="prompt accent fade d4" x="0" y="116">$</text>
+  <rect class="caret" x="12" y="106" width="8" height="13" rx="1" />
+
+  <line class="rule" x1="0" y1="138" x2="880" y2="138" />
+</svg>

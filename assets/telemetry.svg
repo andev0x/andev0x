@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="208" viewBox="0 0 880 208" role="img">
+  <title>Repository telemetry</title>
+  <style>
+    /* One palette, no prefers-color-scheme: this image is rendered against the
+       viewer's GitHub theme, not their OS theme, and the two disagree often.
+       #737d8a holds ~4.2:1 on both #ffffff and #0d1117; hierarchy comes from
+       weight and opacity, which stay honest on either background. */
+    text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      fill: #737d8a;
+    }
+    .title { font-size: 13px; font-weight: 600; fill: #6e7681; }
+    .k     { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; }
+    .v     { font-size: 22px; fill: #6e7681; font-variant-numeric: tabular-nums; }
+    .mono  { font-size: 10.5px; }
+
+    .dot { fill: #2da44e; animation: pulse 2.6s ease-in-out infinite; }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; }
+      50%      { opacity: 1; }
+    }
+
+    .bar {
+      fill: #2da44e;
+      opacity: 0.8;
+      transform-box: fill-box;
+      transform-origin: bottom;
+      animation: grow 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+    }
+    .bar.zero { opacity: 0.2; }
+    @keyframes grow {
+      from { transform: scaleY(0); opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dot, .bar { animation: none; }
+    }
+  </style>
+
+  <rect x="0.5" y="0.5" width="879" height="207" rx="12" fill="none" stroke="#737d8a" stroke-opacity="0.28"/>
+
+  <circle class="dot" cx="26" cy="24" r="4"/>
+  <text class="title" x="40" y="28">system.telemetry</text>
+  <text class="k" x="854" y="27" text-anchor="end">live</text>
+
+  <text class="k" x="26" y="62">pushes · 16d</text><text class="v" x="26" y="92">104</text><text class="k" x="233" y="62">active days · 16d</text><text class="v" x="233" y="92">15</text><text class="k" x="440" y="62">repos touched</text><text class="v" x="440" y="92">13</text><text class="k" x="647" y="62">runner cost</text><text class="v" x="647" y="92">$0.00</text>
+
+  <text class="k" x="26" y="124">activity cadence · 16d</text>
+  <rect class="bar" x="38.4" y="155.1" width="26.9" height="16.9" rx="1.5" style="animation-delay:0.00s"/><rect class="bar" x="90.2" y="132.0" width="26.9" height="40.0" rx="1.5" style="animation-delay:0.02s"/><rect class="bar" x="141.9" y="153.1" width="26.9" height="18.9" rx="1.5" style="animation-delay:0.04s"/><rect class="bar" x="193.7" y="155.1" width="26.9" height="16.9" rx="1.5" style="animation-delay:0.05s"/><rect class="bar" x="245.4" y="165.6" width="26.9" height="6.4" rx="1.5" style="animation-delay:0.07s"/><rect class="bar" x="297.2" y="155.1" width="26.9" height="16.9" rx="1.5" style="animation-delay:0.09s"/><rect class="bar" x="348.9" y="162.2" width="26.9" height="9.8" rx="1.5" style="animation-delay:0.11s"/><rect class="bar" x="400.7" y="151.3" width="26.9" height="20.7" rx="1.5" style="animation-delay:0.13s"/><rect class="bar" x="452.4" y="153.1" width="26.9" height="18.9" rx="1.5" style="animation-delay:0.14s"/><rect class="bar" x="504.2" y="144.9" width="26.9" height="27.1" rx="1.5" style="animation-delay:0.16s"/><rect class="bar" x="555.9" y="151.3" width="26.9" height="20.7" rx="1.5" style="animation-delay:0.18s"/><rect class="bar" x="607.7" y="147.9" width="26.9" height="24.1" rx="1.5" style="animation-delay:0.20s"/><rect class="bar" x="659.4" y="153.1" width="26.9" height="18.9" rx="1.5" style="animation-delay:0.22s"/><rect class="bar" x="711.2" y="144.9" width="26.9" height="27.1" rx="1.5" style="animation-delay:0.23s"/><rect class="bar" x="762.9" y="162.2" width="26.9" height="9.8" rx="1.5" style="animation-delay:0.25s"/><rect class="bar zero" x="814.7" y="170.5" width="26.9" height="1.5" rx="1.5" style="animation-delay:0.27s"/>
+  <line x1="26" y1="172.5" x2="854" y2="172.5" stroke="#737d8a" stroke-opacity="0.28" stroke-width="1"/>
+
+  <text class="mono" x="26" y="192">synced 2026-10-30 20:12 UTC · daily cadence · source: github events</text>
+  <text class="mono" x="854" y="192" text-anchor="end">no external apis</text>
+</svg>
