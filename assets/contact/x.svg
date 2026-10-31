@@ -1,27 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="126" height="20" viewBox="0 0 126 20" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="20" viewBox="0 0 40 20" role="img">
   <title>x — @anvndev</title>
   <style>
-    text {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 11.5px;
-    }
-    .dot   { fill: #484f58; font-size: 12px; }
-    .label { fill: #6e7681; transition: fill 160ms ease; }
-    .value { fill: #c9d1d9; transition: fill 160ms ease; }
+    .dot   { fill: #484f58; }
     .icon  { fill: #6e7681; transition: fill 160ms ease; }
-    svg:hover .label,
-    svg:hover .value,
     svg:hover .icon { fill: #3fb950; }
     @media (prefers-reduced-motion: reduce) {
-      .label, .value, .icon { transition: none; }
+      .icon { transition: none; }
     }
   </style>
 
-  <rect width="126" height="20" fill="#0d1117"/>
-  <text class="dot" x="0" y="14.5">·</text>
-  <g class="icon" transform="translate(16 3) scale(0.5833)">
+  <circle class="dot" cx="8" cy="10" r="1.1"/>
+  <g class="icon" transform="translate(20 2) scale(0.6667)">
     <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
   </g>
-  <text class="label" x="40" y="14.5">x</text>
-  <text class="value" x="58" y="14.5">@anvndev</text>
 </svg>

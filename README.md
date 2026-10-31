@@ -21,7 +21,7 @@ I optimize for clarity over cleverness and systems over shortcuts. When somethin
 
 ### contact
 
-<!-- borderless metadata row: 20px flat plate, no border, no card chrome -->
-<p align="left"><a href="https://andev0x.github.io/" title="web — andev0x.github.io"><img src="assets/contact/web.svg" width="200" height="20" alt="web — andev0x.github.io" /></a><a href="https://mastodon.social/@anvndev" title="mastodon — @anvndev@mastodon.social"><img src="assets/contact/mastodon.svg" width="178" height="20" alt="mastodon — @anvndev@mastodon.social" /></a><a href="https://bsky.app/profile/anvndev.bsky.social" title="bluesky — @anvndev.bsky.social"><img src="assets/contact/bluesky.svg" width="170" height="20" alt="bluesky — @anvndev.bsky.social" /></a><a href="https://x.com/anvndev" title="x — @anvndev"><img src="assets/contact/x.svg" width="126" height="20" alt="x — @anvndev" /></a></p>
+<!-- icon-only metadata row: handles live in title + aria-label, no visible type -->
+<p align="left"><a href="https://andev0x.github.io/" title="web — andev0x.github.io" aria-label="web — andev0x.github.io"><img src="assets/contact/web.svg" width="22" height="20" alt="" /></a><a href="https://mastodon.social/@anvndev" title="mastodon — @anvndev@mastodon.social" aria-label="mastodon — @anvndev@mastodon.social"><img src="assets/contact/mastodon.svg" width="40" height="20" alt="" /></a><a href="https://bsky.app/profile/anvndev.bsky.social" title="bluesky — @anvndev.bsky.social" aria-label="bluesky — @anvndev.bsky.social"><img src="assets/contact/bluesky.svg" width="40" height="20" alt="" /></a><a href="https://x.com/anvndev" title="x — @anvndev" aria-label="x — @anvndev"><img src="assets/contact/x.svg" width="40" height="20" alt="" /></a></p>
 
 > simplicity over complexity · clarity over cleverness · systems over shortcuts
