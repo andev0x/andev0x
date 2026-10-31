@@ -3,7 +3,8 @@
   <style>
     /* Same panel, same palette as every other card: the ~/.andev0x block is the
        visual anchor the rest of the page copies. Keys #8b949e (6.2:1), separators
-       #6e7681, values #3fb950 (7.5:1) — green only where it carries meaning. */
+       #6e7681, values #3fb950 (7.5:1) — green only where it carries meaning.
+       Amber #d29922 is used once, on the active shipping mode. */
     text {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 13px;
@@ -15,6 +16,7 @@
     .key   { fill: #8b949e; }
     .eq    { fill: #7d8590; }
     .val   { fill: #3fb950; }
+    .accent { fill: #d29922; }
     .dim   { fill: #8b949e; font-size: 11px; letter-spacing: 0.06em; }
   </style>
 
@@ -26,5 +28,5 @@
   <text y="82"><tspan class="key" x="32">focus</tspan><tspan class="eq" x="112">=</tspan><tspan class="val" x="136">distributed systems · storage · developer infrastructure</tspan></text>
   <text y="110"><tspan class="key" x="32">stack</tspan><tspan class="eq" x="112">=</tspan><tspan class="val" x="136">go · rust · typescript · python</tspan></text>
   <text y="138"><tspan class="key" x="32">runtime</tspan><tspan class="eq" x="112">=</tspan><tspan class="val" x="136">postgres · redis · docker · kubernetes</tspan></text>
-  <text y="166"><tspan class="key" x="32">mode</tspan><tspan class="eq" x="112">=</tspan><tspan class="val" x="136">shipping</tspan></text>
+  <text y="166"><tspan class="key" x="32">mode</tspan><tspan class="eq" x="112">=</tspan><tspan class="accent" x="136">shipping</tspan></text>
 </svg>

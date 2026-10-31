@@ -1,26 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="220" height="56" viewBox="0 0 220 56" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="126" height="20" viewBox="0 0 126 20" role="img">
   <title>x — @anvndev</title>
   <style>
-    /* One segment of the contact bar: four pieces laid flush in a single source
-       line, each owning only its own slice of the frame. The outer pair draws
-       the rounded ends, every earlier segment draws the shared divider, so the
-       result reads as one bordered strip. #238636 is the only non-neutral
-       stroke on the page: it marks the interactive block and clears the 3:1
-       non-text contrast floor (3.6:1 on #0d1117). */
     text {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 11.5px;
     }
-    .card { fill: #0d1117; }
-    .edge { stroke: #238636; stroke-width: 1; fill: none; }
-    .key  { fill: #8b949e; }
-    .val  { fill: #3fb950; }
+    .dot   { fill: #484f58; font-size: 12px; }
+    .label { fill: #6e7681; transition: fill 160ms ease; }
+    .value { fill: #c9d1d9; transition: fill 160ms ease; }
+    .icon  { fill: #6e7681; transition: fill 160ms ease; }
+    svg:hover .label,
+    svg:hover .value,
+    svg:hover .icon { fill: #3fb950; }
+    @media (prefers-reduced-motion: reduce) {
+      .label, .value, .icon { transition: none; }
+    }
   </style>
-  <path class="card" d="M0 0 H208 A12 12 0 0 1 220 12 V44 A12 12 0 0 1 208 56 H0 Z"/>
-  <path class="edge" d="M208 0.5 A11.5 11.5 0 0 1 219.5 12 V44 A11.5 11.5 0 0 1 208 55.5"/>
-  <line class="edge" x1="0" y1="0.5" x2="208" y2="0.5"/>
-  <line class="edge" x1="0" y1="55.5" x2="208" y2="55.5"/>
-  <g transform="translate(20 20) scale(0.6667)"><path fill="#3fb950" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></g>
-  <text class="key" x="44" y="32">x</text>
-  <text class="val" x="200" y="32" text-anchor="end">@anvndev</text>
+
+  <rect width="126" height="20" fill="#0d1117"/>
+  <text class="dot" x="0" y="14.5">·</text>
+  <g class="icon" transform="translate(16 3) scale(0.5833)">
+    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+  </g>
+  <text class="label" x="40" y="14.5">x</text>
+  <text class="value" x="58" y="14.5">@anvndev</text>
 </svg>
