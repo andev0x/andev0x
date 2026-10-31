@@ -1,35 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20" viewBox="0 0 200 20" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" role="img">
   <title>web — andev0x.github.io</title>
   <style>
-    /* Zero-box contact segment: no border, no radius, no card. The 20px
-       #0d1117 plate is invisible on GitHub's dark canvas and keeps the row
-       readable on light themes. Quiet ink #6e7681 holds the label, #c9d1d9
-       holds the value; green appears only on hover. */
-    text {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 11.5px;
-    }
-    .prompt { fill: #3fb950; font-size: 12px; }
-    .label  { fill: #6e7681; transition: fill 160ms ease; }
-    .value  { fill: #c9d1d9; transition: fill 160ms ease; }
+    /* Icon-only contact row. No plate, no border, no type: four 16px glyphs
+       separated by muted dots. The #6e7681 ink clears the 3:1 non-text floor
+       on both #0d1117 and white; hover is the only green state. */
     .icon   { fill: #6e7681; transition: fill 160ms ease; }
-    .stroke { fill: none; stroke: #6e7681; stroke-width: 1.25; stroke-linecap: round; transition: stroke 160ms ease; }
-    svg:hover .label,
-    svg:hover .value,
-    svg:hover .icon { fill: #3fb950; }
+    .stroke { fill: none; stroke: #6e7681; stroke-width: 1.4; stroke-linecap: round; transition: stroke 160ms ease; }
+    svg:hover .icon   { fill: #3fb950; }
     svg:hover .stroke { stroke: #3fb950; }
     @media (prefers-reduced-motion: reduce) {
-      .label, .value, .icon, .stroke { transition: none; }
+      .icon, .stroke { transition: none; }
     }
   </style>
 
-  <rect width="200" height="20" fill="#0d1117"/>
-  <text class="prompt" x="0" y="14.5">$</text>
-  <g class="stroke" transform="translate(16 3)">
-    <circle cx="7" cy="7" r="5.3"/>
-    <ellipse cx="7" cy="7" rx="2.35" ry="5.3"/>
-    <path d="M1.8 5.4h10.4M1.8 8.6h10.4"/>
+  <g class="stroke" transform="translate(2 2)">
+    <circle cx="8" cy="8" r="6.1"/>
+    <ellipse cx="8" cy="8" rx="2.75" ry="6.1"/>
+    <path d="M1.9 6.2h12.2M1.9 9.8h12.2"/>
   </g>
-  <text class="label" x="40" y="14.5">web</text>
-  <text class="value" x="72" y="14.5">andev0x.github.io</text>
 </svg>
