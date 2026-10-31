@@ -3,7 +3,9 @@
   <style>
     /* Fixed palette, never inherited from the viewer. The panel paints its own
        #0d1117, so contrast is decided here rather than by the GitHub theme.
-       Text: #e6edf3 16.0:1 · #c9d1d9 12.3:1 · #8b949e 6.2:1 · #3fb950 7.5:1. */
+       Text: #e6edf3 16.0:1 · #c9d1d9 12.3:1 · #8b949e 6.2:1 · #3fb950 7.5:1.
+       Amber #d29922 is the single secondary accent and appears only on the
+       shipping tag: green stays the signal for prompts, carets, and live state. */
     text {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       fill: #c9d1d9;
@@ -13,7 +15,7 @@
     .name   { font-size: 26px; font-weight: 600; fill: #e6edf3; letter-spacing: -0.01em; }
     .role   { font-size: 14px; fill: #8b949e; }
     .stack  { font-size: 12.5px; fill: #8b949e; }
-    .status { font-size: 11px; letter-spacing: 0.06em; fill: #8b949e; }
+    .status { font-size: 11px; letter-spacing: 0.06em; fill: #d29922; }
 
     .fade { opacity: 0; animation: rise 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
     .d1 { animation-delay: 0.05s; }
@@ -31,7 +33,7 @@
       50%, 100% { opacity: 0; }
     }
 
-    .dot { fill: #3fb950; animation: pulse 2.4s ease-in-out infinite; }
+    .dot { fill: #d29922; animation: pulse 2.4s ease-in-out infinite; }
     @keyframes pulse {
       0%, 100% { opacity: 0.3; }
       50%      { opacity: 1; }
