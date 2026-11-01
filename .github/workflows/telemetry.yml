@@ -42,8 +42,8 @@ jobs:
 
       - name: Commit only when the data moved
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name  "andev0x"
+          git config user.email "152575252+andev0x@users.noreply.github.com"
 
           git add assets/telemetry.svg
 
