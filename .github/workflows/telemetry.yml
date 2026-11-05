@@ -2,9 +2,9 @@ name: telemetry
 
 on:
   schedule:
-    # 03:17 UTC, daily. A fixed off-peak minute keeps the shared scheduler
-    # honest and avoids the top-of-the-hour stampede.
-    - cron: "17 3 * * *"
+    # Every 16 hours (00:00 and 16:00 UTC). A fixed off-peak-ish cadence keeps
+    # the shared scheduler honest and avoids the top-of-the-hour stampede.
+    - cron: "0 */16 * * *"
   workflow_dispatch:
 
 permissions:
@@ -21,7 +21,7 @@ jobs:
     # api.github.com with the repo-scoped token only — no paid keys, no
     # third-party quota, no artifacts, no caches, no matrix.
     #
-    # The daily commit is also what keeps GitHub from disabling the schedule
+    # The scheduled commit is also what keeps GitHub from disabling the schedule
     # after 60 days of repository inactivity.
     runs-on: ubuntu-latest
     timeout-minutes: 5
