@@ -1,7 +1,7 @@
 <!-- one workflow, one script, no badge farm. the rest is git. -->
 <!-- palette: #0d1117 ground · #3fb950 signal · #d29922 shipping · #6e7681 quiet ink -->
 
-<img src="assets/hero.svg" width="880" alt="an ng — backend and distributed systems engineer · status: shipping · go, rust, typescript, python, postgres, redis, docker, kubernetes" />
+<img src="assets/hero.svg" width="880" alt="an ng — backend and distributed systems engineer · status: shipping" />
 
 I build backend systems that stay boring under load. Mostly **Go** and **Rust** — services, storage internals, and the tooling that keeps them observable. Distributed systems by day, terminal ergonomics by night.
 
