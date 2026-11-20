@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="168" viewBox="0 0 880 168" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="144" viewBox="0 0 880 144" role="img">
   <title>an ng — backend and distributed systems engineer</title>
   <style>
     /* Fixed palette, never inherited from the viewer. The panel paints its own
@@ -14,14 +14,12 @@
     .prompt { font-size: 13px; fill: #3fb950; }
     .name   { font-size: 26px; font-weight: 600; fill: #e6edf3; letter-spacing: -0.01em; }
     .role   { font-size: 14px; fill: #8b949e; }
-    .stack  { font-size: 12.5px; fill: #8b949e; }
     .status { font-size: 11px; letter-spacing: 0.06em; fill: #d29922; }
 
     .fade { opacity: 0; animation: rise 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
     .d1 { animation-delay: 0.05s; }
     .d2 { animation-delay: 0.2s; }
     .d3 { animation-delay: 0.32s; }
-    .d4 { animation-delay: 0.44s; }
     @keyframes rise {
       from { opacity: 0; transform: translateY(5px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -47,7 +45,7 @@
     }
   </style>
 
-  <rect class="panel" x="0.5" y="0.5" width="879" height="167" rx="12" />
+  <rect class="panel" x="0.5" y="0.5" width="879" height="143" rx="12" />
 
   <text class="prompt fade d1" x="32" y="44">$ whoami</text>
   <text class="status fade d1" x="826" y="44" text-anchor="end">status: shipping</text>
@@ -58,8 +56,6 @@
     <tspan class="role" dx="16">backend &amp; distributed systems engineer</tspan>
   </text>
 
-  <text class="stack fade d3" x="32" y="120">go · rust · typescript · python · postgres · redis · docker · kubernetes</text>
-
-  <text class="prompt fade d4" x="32" y="152">$</text>
-  <rect class="caret" x="44" y="141" width="8" height="13" rx="1" />
+  <text class="prompt fade d3" x="32" y="128">$</text>
+  <rect class="caret" x="44" y="117" width="8" height="13" rx="1" />
 </svg>
